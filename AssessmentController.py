@@ -73,7 +73,8 @@ class AssessmentController:
     def showWelcome(self, provider):
         self._display.clear()
         self._display.showText("Welcome!", 0)
-        self._display.showText(f"{provider['_lastname']}, {provider['_title']}", 1)
+        provider_text = f"{provider['_lastname']}, {provider['_firstname'][0]}., {provider['_title']}"
+        self._display.showText(provider_text[:16], 1)
         self._buzzer.beep(tones['C5'], 200)
         time.sleep(0.1)
         self._buzzer.beep(tones['E5'], 200)
