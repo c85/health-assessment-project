@@ -42,6 +42,20 @@ A physical monitoring device that:
 - Provides visual (LED strip) and audio (buzzer) feedback
 - Allows navigation through patients and assessments using physical buttons
 
+## System Diagrams
+
+### Class Diagram
+![Class Diagram](pihealth_class_diagram.png)
+
+### Sequence Diagram
+![Sequence Diagram](pihealth_sequence_diagram.png)
+
+### State Diagram
+![State Diagram](pihealth_state_diagram.png)
+
+### Use Case Diagram
+![Use Case Diagram](pihealth_use_case_diagram.png)
+
 ## Assessment Logic
 
 The system automatically evaluates patient health status based on vital sign measurements:
