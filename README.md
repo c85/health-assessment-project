@@ -1,16 +1,16 @@
 # PiHealth Monitoring System
 
-A HIPAA-compliant remote patient monitoring system that enables healthcare providers to securely access and review patient health assessments based on vital signs data collected through an Oracle Apex front-end application.
+A HIPAA-compliant* remote patient monitoring system that enables healthcare providers to securely access and review patient health assessments based on vital signs data collected through an Oracle Apex front-end application.
 
 **Group Project for ISM6106 Systems Design Course - Florida International University**
 
 ## Overview
 
-The PiHealth Monitoring System is a secure, remote monitoring solution that allows healthcare providers to access patient health assessments in a HIPAA-compliant manner. Patient vital signs are inputted through an Oracle Apex web application front-end, and assessments are automatically generated based on predefined health thresholds. If 3 or more vital signs fall outside the expected normal range, the patient is recorded as "UNHEALTHY"; otherwise, the assessment result is "HEALTHY". These assessment results are stored in the database and presented to providers through the monitoring system. Healthcare providers can then remotely access these assessments through a physical computing device that connects to the Oracle Apex backend via REST API.
+The PiHealth Monitoring System is a secure, remote monitoring solution that allows healthcare providers to access patient health assessments in a HIPAA-compliant* manner. Patient vital signs are inputted through an Oracle Apex web application front-end, and assessments are automatically generated based on predefined health thresholds. If 3 or more vital signs fall outside the expected normal range, the patient is recorded as "UNHEALTHY"; otherwise, the assessment result is "HEALTHY". These assessment results are stored in the database and presented to providers through the monitoring system. Healthcare providers can then remotely access these assessments through a physical computing device that connects to the Oracle Apex backend via REST API.
 
 ## Key Features
 
-- **HIPAA-Compliant Remote Access**: Secure, encrypted communication between the monitoring device and Oracle Apex backend
+- **HIPAA-Compliant* Remote Access**: Secure, encrypted communication between the monitoring device and Oracle Apex backend
 - **RFID-Based Provider Authentication**: Secure provider identification using RFID badge scanning for access control and audit trails
 - **Real-Time Assessment Display**: Physical computing device displays patient assessments in real-time as they are generated
 - **Provider-Patient Assignment**: Providers can view only their assigned patients and their corresponding health assessments
@@ -133,10 +133,12 @@ The system operates using a state-based model with the following states:
 
 ## Security & Compliance
 
-- **HIPAA Compliance**: Secure data transmission and access controls
+- **HIPAA Compliance***: Secure data transmission and access controls
 - **Provider Authentication**: RFID-based authentication ensures only authorized personnel can access patient data
 - **Audit Trail**: All provider actions are logged and tracked
 - **Secure Network Communication**: Encrypted HTTPS communication with Oracle Apex backend
+
+\* **Disclaimer**: This project is for demonstration and educational purposes only. While the system implements security features and access controls, it is not actually HIPAA-compliant and should not be used in a production healthcare environment. Real HIPAA compliance requires comprehensive security audits, formal compliance certifications, and adherence to all applicable regulations and standards.
 
 ## Use Cases
 
